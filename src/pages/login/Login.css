@@ -1,0 +1,101 @@
+/* Ensure html and body take up the full viewport height */
+html, body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Set body as a flex container to center content both vertically and horizontally */
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('login_background.png'); /* update the path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* Styling for Login and Signup containers */
+  .login-container,
+  .signup-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.7); /* More transparent white */
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  /* Additional styles for headings, forms, inputs, and buttons */
+  .login-container h2,
+  .signup-container h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #333;
+  }
+  
+  .login-container form,
+  .signup-container form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .login-container input,
+  .signup-container input {
+    margin-bottom: 15px;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .login-container input:focus,
+  .signup-container input:focus {
+    border-color: #007BFF;
+    outline: none;
+  }
+  
+  .login-container button,
+  .signup-container button {
+    padding: 12px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .login-container button:hover,
+  .signup-container button:hover {
+    background-color: #0056b3;
+  }
+  
+  .login-container p,
+  .signup-container p {
+    margin-top: 15px;
+    font-size: 14px;
+  }
+  
+  .login-container p a,
+  .signup-container p a,
+  .signup-container p button {
+    color: #007BFF;
+    text-decoration: none;
+    background: none;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .login-container p a:hover,
+  .signup-container p a:hover,
+  .signup-container p button:hover {
+    text-decoration: underline;
+  }
+  
